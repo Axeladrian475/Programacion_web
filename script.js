@@ -37,6 +37,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Efecto parallax
+    window.addEventListener('scroll', function() {
+        const parallax = document.querySelector('.parallax-container');
+        if (parallax) {
+            let scrollPosition = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+        }
+    });
+
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);

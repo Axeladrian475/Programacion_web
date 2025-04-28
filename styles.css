@@ -63,24 +63,77 @@ section h2:after {
     font-weight: bold;
 }
 
-#slider {
-    margin-bottom: 20px;
+/* Estilos del parallax */
+.parallax-container {
+    height: 500px;
+    background-image: url('img/fondo_codigo.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
+.parallax-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
     border-radius: 10px;
+    max-width: 600px;
+}
+
+.parallax-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.parallax-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.parallax-buttons {
+    margin-top: 20px;
+}
+
+/* Estilos para el carrusel personalizado */
+.custom-carousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.carousel-img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flechas negras para el carrusel */
+.dark-arrow {
+    filter: brightness(0);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
     padding: 15px;
 }
 
-.carousel-item img {
-    object-fit: cover;
-    height: 400px;
-}
-
-#carruselProyectos .carousel-item img {
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+#carruselProyectos .carousel-control-prev,
+#carruselProyectos .carousel-control-next {
+    width: 10%;
 }
 
 .btn-contact {
@@ -98,8 +151,8 @@ section h2:after {
         margin-bottom: 20px;
     }
     
-    .carousel-item img {
-        height: 250px;
+    .parallax-container {
+        height: 350px;
     }
     
     .profile-photo-container {
@@ -107,5 +160,14 @@ section h2:after {
         height: 100px;
         top: 10px;
         left: 20px;
+    }
+    
+    .parallax-content {
+        padding: 15px;
+        max-width: 90%;
+    }
+    
+    .carousel-image-container {
+        height: 200px;
     }
 }
