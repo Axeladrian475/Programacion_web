@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi CV Personal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carrusel">Carrusel</a>
+                    </li>
+                </ul>
+                <div class="ms-3">
+                    <button id="btnTelefono" class="btn btn-outline-light btn-sm">
+                        <i class="fas fa-phone"></i> Teléfono
+                    </button>
+                    <button id="btnCorreo" class="btn btn-outline-light btn-sm">
+                        <i class="fas fa-envelope"></i> Correo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+        <section id="slider" class="mt-5 pt-4 position-relative">
+            <div class="profile-photo-container">
+                <img src="img/yo.jpg" class="profile-photo" alt="Foto de Perfil">
+            </div>
+            
+            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselPrincipal" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/fondo_codigo.png" class="d-block w-100" alt="Slider 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Bienvenido a mi CV Personal</h2>
+                            <p>Desarrollador web con pasión por crear soluciones digitales</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/inova.png" class="d-block w-100" alt="Slider 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Proyectos Innovadores</h2>
+                            <p>Explora mi trabajo en desarrollo web y diseño UX/UI</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/excelencia.png" class="d-block w-100" alt="Slider 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Comprometido con la Excelencia</h2>
+                            <p>Creando soluciones que combinan funcionalidad y estética</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPrincipal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+    <section id="sobremi" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <p class="lead">
+                        Soy un estudiante de septimo semestre de preparatoria que estudia en CETI, cuanto con experiencia 
+                        en desarrollo web y diseño de aplicaciones. Me apasiona el aprendizaje continuo y mantenerme actualizado con 
+                        las últimas tecnologías y tendencias del mercado.
+
+                    </p>
+                    <p>
+                        Con habilidades en HTML, CSS, JavaScript, Bootstrap y otras tecnologías web, me especializo en crear 
+                        interfaces atractivas y funcionales. Mi enfoque se centra en el diseño centrado en el usuario y en 
+                        la creación de experiencias web que sean tanto visualmente atractivas como intuitivas de usar.
+                    </p>
+                    <p>
+                        Además de mis habilidades técnicas, cuento con una sólida capacidad para trabajar en equipo, 
+                        comunicarme efectivamente y resolver problemas de manera creativa. Siempre busco nuevos desafíos 
+                        que me permitan crecer profesionalmente y contribuir con soluciones innovadoras.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Experiencia</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="card-title mb-0">Formación Académica</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h4>Estudios en curso</h4>
+                                <p class="text-muted">Tecnologo en desarollo de software, 2021 - Actualidad</p>
+                                <p>Estudio como tecnologo en desarrollo de software en ceti colomos y actualmente estoy cursando 
+                                    el septimo semestre donde me estoy desempeñando como buen y apasionado estudiante.
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <h4>Certificación</h4>
+                                <p class="text-muted">Curso de introducción al desarrollo web: HTML y CSS (1/2), April 4, 2023</p>
+                                <p>Con este curso sin coste te introducirás en el diseño de páginas web de manera profesional.
+                                     En la primera parte del curso aprenderás cómo nació la Web y cómo ha llegado a ser lo que
+                                    es hoy. Serás capaz de crear páginas web correctas de manera profesional utilizando HTML5..</p>
+                            </div>
+                            <div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="card-title mb-0">Experiencia Laboral</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <h4>Desarrollador Web</h4>
+                                <p class="text-muted">Empresa, 2022-Presente</p>
+                                <p>Pro - Developer TESLA</p>
+                            </div>
+                            <div class="mb-3">
+                                <h4>Staff Cinemex</h4>
+                                <p class="text-muted">Staff, 2024-2025</p>
+                                <p>Atención al cliente, preparación de alimentos, limpieza, manejo de caja</p>
+                            </div>
+                            <div>
+                                <h4>Practicante</h4>
+                                <p class="text-muted">Startup, 2019-2020</p>
+                                <p>Jefe de Cristian Alfonso Amezcua Trejo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrusel" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Carrusel</h2>
+            <div id="carruselProyectos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carruselProyectos" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/p1.png" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/p2.png" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/p3.png" class="d-block w-100" alt="Imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselProyectos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselProyectos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Mi CV Personal. Todos los derechos reservados.</p>
+            <div id="contactInfo" class="mt-2">
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Información de Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
